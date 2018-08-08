@@ -27,7 +27,7 @@ Sandstorm:
       # if TRUE, saves ContentUserData for logged-in users. This saves data that a frontend user
       # enters during his work with a content, and will restore content state on page reloads.
       save_content_state: true
-      # interval in seconds for whcih the ContentUserData is saved
+      # interval in seconds for which the ContentUserData is saved
       save_content_frequency: 10
       # whether or not the H5P hub is enabled.
       hub_is_enabled: true
@@ -39,6 +39,11 @@ Sandstorm:
       embed: true
       copyright: true
       icon: true
+    lrsSettings:
+      # The ajax url for sending the xAPI statements to the LRS
+      ajax_url: 'https://localhost:8082'
+      # enables console-output for all requests to the LRS
+      enable_debug_logging: true
 
     # Setting for the H5PCore->aggregateAssets switch. If set to TRUE, H5P triggers the generation of
     # aggregated assets (CachedAsset) for each content element.

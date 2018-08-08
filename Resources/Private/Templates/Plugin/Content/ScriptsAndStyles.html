@@ -7,3 +7,7 @@
 <f:for each="{scripts}" as="script">
     <script src="{script -> f:format.raw()}"></script>
 </f:for>
+<script type="text/javascript">
+    let lrsAjaxUrl = "{lrsAjaxUrl -> f:format.raw()}";
+    let lrsEnableDebugLogging = {lrsEnableDebugLogging};
+</script>
